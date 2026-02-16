@@ -75,4 +75,22 @@ CREATE TABLE weather_info (
 ---
 
 ## cURL Commands
+```sql
+    curl -X GET "http://localhost:8080/api/weather?pincode=411014&for_date=2020-10-15"
 
+    curl -i "http://localhost:8080/api/weather?pincode=411014&for_date=2020-10-15"
+    
+    curl "https://api.openweathermap.org/data/2.5/weather?lat=18.5204&lon=73.8567&appid=YOUR_API_KEY&units=metric"
+
+    
+    Response:
+                {
+          "temperature": 29.5,
+          "humidity": 64,
+          "description": "clear sky"
+                }
+        
+        
+
+
+```
