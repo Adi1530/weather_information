@@ -50,7 +50,6 @@ Make sure the following are installed:
 ```sql
 CREATE DATABASE weather_db;
 
-```sql
 
 CREATE TABLE pincode_location (
     id BIGSERIAL PRIMARY KEY,
@@ -60,7 +59,7 @@ CREATE TABLE pincode_location (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
-```sql
+
 
 CREATE TABLE weather_info (
     id BIGSERIAL PRIMARY KEY,
