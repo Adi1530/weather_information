@@ -71,3 +71,8 @@ CREATE TABLE weather_info (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     UNIQUE (pincode_id, weather_date)
 );
+
+---
+
+## cURL Commands
+
