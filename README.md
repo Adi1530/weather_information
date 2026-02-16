@@ -49,3 +49,26 @@ Make sure the following are installed:
 
 ```sql
 CREATE DATABASE weather_db;
+
+```sql
+
+CREATE TABLE pincode_location (
+    id BIGSERIAL PRIMARY KEY,
+    pincode VARCHAR(10) NOT NULL UNIQUE,
+    latitude DOUBLE PRECISION NOT NULL,
+    longitude DOUBLE PRECISION NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+```sql
+
+CREATE TABLE weather_info (
+    id BIGSERIAL PRIMARY KEY,
+    pincode_id BIGINT REFERENCES pincode_location(id),
+    weather_date DATE NOT NULL,
+    temperature DOUBLE PRECISION,
+    humidity INTEGER,
+    description VARCHAR(255),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    UNIQUE (pincode_id, weather_date)
+);
