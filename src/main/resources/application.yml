@@ -1,8 +1,8 @@
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/weather_db
-    username: adi
-    password: 123456789
+    username: xxx
+    password: xxx
   jpa:
     hibernate:
       ddl-auto: validate
@@ -13,4 +13,4 @@ spring:
 
 openweather:
   api:
-    key: c396833a8d0aa9ad7157d375cfb83bac
+    key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
